@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {
   LENGTH_UNITS, WEIGHT_UNITS, AREA_UNITS, VOLUME_UNITS, SPEED_UNITS, type UnitDef
 } from '../../data/unitData';

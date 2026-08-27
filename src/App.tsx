@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 // Layout
 import Sidebar from './components/Sidebar';

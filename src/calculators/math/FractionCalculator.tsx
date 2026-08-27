@@ -1,12 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const gcd = (a: number, b: number): number => b === 0 ? a : gcd(b, a % b);
-
-function parseFrac(s: string): [number, number] {
-  const parts = s.trim().split('/');
-  if (parts.length === 2) return [parseInt(parts[0]), parseInt(parts[1])];
-  return [parseInt(parts[0]), 1];
-}
 
 function simplify(n: number, d: number): [number, number] {
   if (d === 0) return [NaN, 1];

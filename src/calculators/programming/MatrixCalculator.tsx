@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { add, multiply, det, inv } from 'mathjs';
 
 export default function MatrixCalculator() {
@@ -39,7 +39,7 @@ export default function MatrixCalculator() {
     else if (op === 'multiply') result = multiply(mA, mB);
     else if (op === 'det') result = det(mA);
     else if (op === 'inv') result = inv(mA);
-  } catch (err: any) {
+  } catch {
     error = 'Operation failed. Matrix might be singular or non-invertible.';
   }
 

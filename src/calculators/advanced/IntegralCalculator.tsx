@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import nerdamer from 'nerdamer';
 import 'nerdamer/Calculus';
 
@@ -12,7 +12,7 @@ export default function IntegralCalculator() {
   try {
     const integ = nerdamer(`integrate(${expression}, ${variable})`);
     result = integ.text() + ' + C';
-  } catch (err: any) {
+  } catch {
     error = 'Could not calculate indefinite integral. Check function syntax.';
   }
 

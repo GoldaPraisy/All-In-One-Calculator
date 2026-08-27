@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function PercentageCalculator() {
   const [mode, setMode] = useState<'what_is' | 'is_what_percent' | 'inc_dec'>('what_is');

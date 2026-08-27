@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function DateDiffCalculator() {
   const [startDate, setStartDate] = useState('2026-01-01');

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { WORLD_CURRENCIES } from '../../data/unitData';
 
 export default function CurrencyCalculator() {

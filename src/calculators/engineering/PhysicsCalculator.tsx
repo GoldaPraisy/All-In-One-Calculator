@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function PhysicsCalculator() {
   const [topic, setTopic] = useState<'force' | 'ke' | 'pe' | 'momentum' | 'pressure'>('force');

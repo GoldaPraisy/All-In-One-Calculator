@@ -1,4 +1,3 @@
-import React from 'react';
 import { ALL_CALCS, CATEGORIES } from '../data/categories';
 
 interface Props {

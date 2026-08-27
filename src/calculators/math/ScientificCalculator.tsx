@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { evaluate, factorial, round } from 'mathjs';
 
 const SCI_BUTTONS = [

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import {
   Chart as ChartJS, CategoryScale, LinearScale, PointElement,
   LineElement, Title, Tooltip, Legend, Filler
@@ -18,7 +18,7 @@ export default function GraphingCalculator() {
   const [error, setError] = useState('');
   const [chartData, setChartData] = useState<any>(null);
 
-  const plot = () => {
+  const plot = useCallback(() => {
     setError('');
     const min = parseFloat(xMin), max = parseFloat(xMax);
     if (isNaN(min)||isNaN(max)||min>=max) { setError('Invalid x range'); return; }
@@ -47,9 +47,9 @@ export default function GraphingCalculator() {
         spanGaps: false,
       }]
     });
-  };
+  }, [formula, xMin, xMax, steps]);
 
-  useEffect(() => { plot(); }, []);
+  useEffect(() => { plot(); }, [plot]);
 
   const options = {
     responsive: true,

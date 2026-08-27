@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function ConstructionCalculator() {
   const [material, setMaterial] = useState<'concrete' | 'bricks' | 'tiles' | 'paint'>('concrete');

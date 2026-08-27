@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { combinations, permutations, factorial } from 'mathjs';
+import { useState } from 'react';
+import { combinations, permutations } from 'mathjs';
 
 export default function ProbabilityCalculator() {
   const [n, setN] = useState('10');

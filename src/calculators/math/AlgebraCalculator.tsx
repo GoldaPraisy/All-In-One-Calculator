@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { simplify, evaluate } from 'mathjs';
 
 export default function AlgebraCalculator() {
@@ -11,7 +11,7 @@ export default function AlgebraCalculator() {
 
   try {
     simplified = simplify(expr).toString();
-  } catch (err: any) {
+  } catch {
     error = 'Could not simplify expression. Check syntax.';
   }
 

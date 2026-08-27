@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function ElectricalCalculator() {
   const [solveFor, setSolveFor] = useState<'v' | 'i' | 'r' | 'p'>('v');
@@ -6,12 +6,10 @@ export default function ElectricalCalculator() {
   const [voltage, setVoltage] = useState('220');
   const [current, setCurrent] = useState('10');
   const [resistance, setResistance] = useState('22');
-  const [power, setPower] = useState('2200');
 
   const v = parseFloat(voltage) || 0;
   const i = parseFloat(current) || 0;
   const r = parseFloat(resistance) || 0;
-  const p = parseFloat(power) || 0;
 
   let resTitle = '';
   let resVal = '';

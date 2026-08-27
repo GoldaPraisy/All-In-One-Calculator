@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { mean, median, mode, variance, std, min, max, sum } from 'mathjs';
 
 export default function StatisticsCalculator() {

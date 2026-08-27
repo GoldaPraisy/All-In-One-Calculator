@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import nerdamer from 'nerdamer';
 import 'nerdamer/Solve';
 
@@ -10,15 +10,15 @@ export default function EquationSolver() {
   let error = '';
 
   try {
-    const sol = nerdamer.solve(eq, variable);
+    const sol = (nerdamer as any).solve(eq, variable);
     const text = sol.text();
     // parse solution array format like "[2,3]"
     if (text.startsWith('[') && text.endsWith(']')) {
-      solutions = text.slice(1, -1).split(',').map(s => s.trim());
+      solutions = text.slice(1, -1).split(',').map((s: string) => s.trim());
     } else {
       solutions = [text];
     }
-  } catch (err: any) {
+  } catch {
     error = 'Could not solve equation. Ensure equation includes = sign or equals 0.';
   }
 

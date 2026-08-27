@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function GeometryCalculator() {
   const [shape, setShape] = useState<'circle' | 'rectangle' | 'triangle' | 'sphere' | 'cylinder'>('circle');

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function TimeCalculator() {
   const [h1, setH1] = useState('2');

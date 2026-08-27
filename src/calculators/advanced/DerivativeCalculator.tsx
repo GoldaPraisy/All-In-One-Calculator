@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import nerdamer from 'nerdamer';
 import 'nerdamer/Calculus';
 
@@ -12,7 +12,7 @@ export default function DerivativeCalculator() {
   try {
     const diff = nerdamer(`diff(${expression}, ${variable})`);
     result = diff.text();
-  } catch (err: any) {
+  } catch {
     error = 'Could not calculate derivative. Please check expression syntax.';
   }
 
