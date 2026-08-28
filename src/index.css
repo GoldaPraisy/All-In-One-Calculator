@@ -499,8 +499,12 @@ body {
 }
 
 .calc-page-icon {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 12px rgba(0, 191, 255, 0.45));
 }
 
 .calc-page-title {
@@ -1200,6 +1204,7 @@ body {
 /* --- Slider --- */
 .form-slider {
   -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -1210,6 +1215,7 @@ body {
 
 .form-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
+  appearance: none;
   width: 16px;
   height: 16px;
   border-radius: 50%;
