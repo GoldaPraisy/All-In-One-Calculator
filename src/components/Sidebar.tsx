@@ -33,11 +33,11 @@ export default function Sidebar({
             alt="All-in-One Calculator"
             className="sidebar-logo-icon"
             style={{
-              width: 52,
-              height: 52,
+              width: 72,
+              height: 72,
               objectFit: 'contain',
               flexShrink: 0,
-              filter: 'drop-shadow(0 0 8px #00bfff)',
+              filter: 'drop-shadow(0 0 12px #00bfff)',
             }}
           />
           {!collapsed && (
